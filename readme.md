@@ -8,9 +8,9 @@
 
 ### attainment
 
+[边界问题](https://github.com/gg-dot/MyLeetcodeTrip/tree/master/attainment)
+
 ------
-
-
 
 ### leetcode
 
@@ -22,7 +22,7 @@
 
 [0059.Spiral Matrix II](https://github.com/gg-dot/MyLeetcodeTrip/tree/master/0059.Spiral%20Matrix%20II)
 
-2021.10.27 WED first solve
+21.10.27 WED first solve
 
 ------
 
