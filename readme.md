@@ -44,7 +44,7 @@
 
 ------
 
-[0704.Binary Search](https://leetcode-cn.com/problems/binary-search/)
+[0704.Binary Search](https://github.com/gg-dot/MyLeetcodeTrip/tree/master/0704.%20Binary%20Search)
 
 21.10.28 THU first solve
 
