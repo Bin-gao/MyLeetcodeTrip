@@ -22,7 +22,7 @@
 
 ![结果](https://assets.leetcode.com/uploads/2021/02/19/tree.jpg)
 
-遵循循环不变量，参数左闭右开。
+遵循循环不变量，参数左闭右开，也可以左闭右闭，但必须改递归时的参数。
 
 **此时有一个很重的点，就是中序数组大小一定是和后序数组的大小相同的（这是必然）。**
 
@@ -44,4 +44,6 @@ int leftPostorderEnd = postorderBegin + delimiterIndex - inorderBegin; // 终止
 int rightPostorderBegin = postorderBegin + (delimiterIndex - inorderBegin);
 int rightPostorderEnd = postorderEnd - 1; // 排除最后一个元素，已经作为节点了
 ```
+
+
 
