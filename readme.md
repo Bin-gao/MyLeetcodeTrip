@@ -44,7 +44,7 @@
 
 ------
 
-[0700.Search in a Binary Search Tree](https://leetcode-cn.com/problems/search-in-a-binary-search-tree/)
+[0700.Search in a Binary Search Tree](https://github.com/gg-dot/MyLeetcodeTrip/tree/master/0700.%20Search%20in%20a%20Binary%20Search%20Tree)
 
 21.10.28 THU first solve
 
