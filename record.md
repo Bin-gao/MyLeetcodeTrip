@@ -25,5 +25,27 @@
 
 - [0530.Minimum Absolute Difference in BST](https://leetcode-cn.com/problems/minimum-absolute-difference-in-bst/)
 
-- [0501. Find Mode in Binary Search Tree](https://leetcode-cn.com/problems/find-mode-in-binary-search-tree/)
+- [0501.Find Mode in Binary Search Tree](https://leetcode-cn.com/problems/find-mode-in-binary-search-tree/)
+
+
+
+### 2021.10.30 SAT
+
+- [0108.Convert Sorted Array to Binary Search Tree](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/)
+
+- [0235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
+
+- [0236.Lowest Common Ancestor of a Binary Tree](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)
+
+- [0450.Delete Node in a BST](https://leetcode-cn.com/problems/delete-node-in-a-bst/)
+
+- [0701.Insert into a Binary Search Tree](https://leetcode-cn.com/problems/insert-into-a-binary-search-tree/)
+
+
+
+### 2021.10.31 SUN
+
+- [0538.Convert BST to Greater Tree](https://leetcode-cn.com/problems/convert-bst-to-greater-tree/)
+
+- [0669.Trim a Binary Search Tree](https://leetcode-cn.com/problems/trim-a-binary-search-tree/)
 
