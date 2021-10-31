@@ -14,25 +14,25 @@
 
 ### leetcode
 
-[0034.Find First and Last Position of Element in Sorted Array](https://github.com/gg-dot/MyLeetcodeTrip/tree/master/0034.Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array)
+[0034.Find First and Last Position of Element in Sorted Array](https://github.com/gg-dot/MyLeetcodeTrip/tree/master/0034.%20Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array)
 
 21.10.27 WED first solve
 
 ------
 
-[0059.Spiral Matrix II](https://github.com/gg-dot/MyLeetcodeTrip/tree/master/0059.Spiral%20Matrix%20II)
+[0059.Spiral Matrix II](https://github.com/gg-dot/MyLeetcodeTrip/tree/master/0059.%20Spiral%20Matrix%20II)
 
 21.10.27 WED first solve
 
 ------
 
-[0105.Construct Binary Tree from Preorder and Inorder Traversal](https://github.com/gg-dot/MyLeetcodeTrip/tree/master/105.Construct%20Binary%20Tree%20from%20Preorder%20and%20Inorder%20Traversal#readme)
+[0105.Construct Binary Tree from Preorder and Inorder Traversal](https://github.com/gg-dot/MyLeetcodeTrip/tree/master/0105.%20Construct%20Binary%20Tree%20from%20Preorder%20and%20Inorder%20Traversal)
 
 21.10.27 WED first solve
 
 ------
 
-[0106.Construct Binary Tree from Inorder and Postorder Traversal](https://github.com/gg-dot/MyLeetcodeTrip/tree/master/106.Construct%20Binary%20Tree%20from%20Inorder%20and%20Postorder%20Traversal)
+[0106.Construct Binary Tree from Inorder and Postorder Traversal](https://github.com/gg-dot/MyLeetcodeTrip/tree/master/0106.%20Construct%20Binary%20Tree%20from%20Inorder%20and%20Postorder%20Traversal)
 
 21.10.30 SAT first solve
 
