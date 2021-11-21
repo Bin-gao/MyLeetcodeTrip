@@ -46,12 +46,16 @@
         return new int[]{left+1,right+1};
     }
   ```
+
+  时间复杂度O(n)
+  空间复杂度O(1)
+
 ------
 
 #### 二分法+双指针
   由于数组是有序的，右指针没必要从最后一个元素开始，可以利用二分法缩短查找范围。
   假设num1 + num2 == target 则num2 == target-num1,又num1 >= num[0],则num2 <= target - num[0],即我们可以找出第一个大于等于target-num[0]的数所在的位置作为右指针开始的位置。
-  
+
  ```java
    public int[] twoSum(int[] numbers, int target) {
         int[] res = new int[2];
@@ -68,6 +72,9 @@
         return res;
     }
  ```
-  
+
+ 时间复杂度O(logn)
+ 空间复杂度O(1)
+
   
 
