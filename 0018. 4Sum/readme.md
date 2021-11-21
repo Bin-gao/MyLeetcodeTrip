@@ -12,7 +12,7 @@ Given an array nums of n integers, return an array of all the unique quadruplets
 
 You may return the answer in any order.
 
- 
+
 Example 1:
 
 Input: nums = [1,0,-1,0,-2,2], target = 0
@@ -37,7 +37,7 @@ Output: [[2,2,2,2]]
 去重细节见下面代码
 
 ```java
- public List<List<Integer>> fourSum(int[] nums, int target) {
+ public List<List<Integer>> fourSum(int[] nums, int target) {//时间复杂度是O(n^2)
         Arrays.sort(nums);
         ArrayList<List<Integer>> result = new ArrayList<>();
 
