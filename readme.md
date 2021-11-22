@@ -12,6 +12,8 @@
 
 [n数之和总结](https://github.com/gg-dot/MyLeetcodeTrip/tree/master/attainment/n%E6%95%B0%E4%B9%8B%E5%92%8C%E6%80%BB%E7%BB%93)
 
+[移除元素总结](https://github.com/gg-dot/MyLeetcodeTrip/tree/master/attainment/%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0%E6%80%BB%E7%BB%93)
+
 ------
 
 ### leetcode
