@@ -20,6 +20,12 @@
 
 ### leetcode
 
+[0002 . Add Two Numbers](https://github.com/gg-dot/MyLeetcodeTrip/tree/master/0002.%20Add%20Two%20Numbers)
+
+21.11.25 THU first solve
+
+------
+
 [0017. Letter Combinations of a Phone Number](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/)
 
 21.11.01 MON first solve
