@@ -14,6 +14,8 @@
 
 [移除元素总结](https://github.com/gg-dot/MyLeetcodeTrip/tree/master/attainment/%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0%E6%80%BB%E7%BB%93)
 
+[链表总结](https://github.com/gg-dot/MyLeetcodeTrip/tree/master/attainment/%E9%93%BE%E8%A1%A8%E6%80%BB%E7%BB%93)
+
 ------
 
 ### leetcode
