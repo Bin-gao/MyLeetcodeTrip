@@ -70,7 +70,7 @@ public class ListNode {
 
 力扣707题设计链表[707 . Design Linked List](https://leetcode-cn.com/problems/design-linked-list/)有链表的增删查。
 
-### 添加节点
+### 单链表添加节点
 
 添加节点F，C向指向F，F再指向D就可以了。
 
@@ -128,7 +128,7 @@ public class ListNode {
     }
 ```
 
-### 删除节点
+### 单链表删除节点
 
 只要将C节点的next指针 指向E节点就可以了。
 
@@ -154,9 +154,17 @@ public class ListNode {
 
 ```
 
-### 查某个节点
+### 单链表查某个节点
 
 ```java
+    //无参初始化链表
+    public MyDoubleLinkedList() {
+        size = 0;
+        head = new DoubleListNode(-1);
+        tail = new DoubleListNode(-1);
+        head.next = tail;
+        tail.prev = head;
+    }
 //获取第index个节点
     public ListNode getNode(int index){
         if ( index < 0 || index >= size ) return null;
@@ -167,4 +175,62 @@ public class ListNode {
         }
         return cur;
     }
+ //在链表的最前面插入数值
+    public void addAtHead(int val) {
+        DoubleListNode cur = head;
+        DoubleListNode newNode = new DoubleListNode(val);
+        newNode.next = cur.next;
+        cur.next.prev = newNode;
+        cur.next = newNode;
+        newNode.prev = cur;
+        size++;
+    }
+
+    //在链表的最后面插入数值
+    public void addAtTail(int val) {
+        DoubleListNode cur = tail;
+        DoubleListNode newNode = new DoubleListNode(val);
+        newNode.next = tail;
+        newNode.prev = cur.prev;
+        cur.prev.next = newNode;
+        cur.prev = newNode;
+        size++;
+    }
+
+    // 在第 index 个节点之前插入一个新节点，例如index为0，那么新插入的节点为链表的新头节点。
+    // 如果 index 等于链表的长度，则说明是新插入的节点为链表的尾结点
+    // 如果 index 大于链表的长度，则返回空
+    public void addAtIndex(int index,int val) {
+        if ( index == 0 ) addAtHead(val);
+        else if ( index == size ) addAtTail(val);
+        else if ( index > 0 && index < size){
+            size++;
+            DoubleListNode node = new DoubleListNode(val);
+            DoubleListNode preNode = head.next;
+            for ( int i = 0 ; i < index-1 ; i++ ) {
+                preNode = preNode.next;
+            }
+            node.next = preNode.next;
+            preNode.next.prev = node;
+            node.prev = preNode;
+            preNode.next = node;
+        }
+    }
+
+    //删除第index个节点
+    public void deleteAtIndex(int index) {
+        if ( index < 0 || index >= size ) return;
+
+        DoubleListNode preNode = head;
+        for ( int i = 0 ; i < index ; i++ ) {
+            preNode = preNode.next;
+        }
+        preNode.next.next.prev = preNode;
+        preNode.next = preNode.next.next;
+        size--;
+
+    }
 ```
+
+
+
