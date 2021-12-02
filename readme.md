@@ -22,6 +22,8 @@
 
 [栈队列总结](https://github.com/gg-dot/MyLeetcodeTrip/tree/master/attainment/%E6%A0%88%E9%98%9F%E5%88%97%E6%80%BB%E7%BB%93)
 
+[KMP](https://github.com/gg-dot/MyLeetcodeTrip/tree/master/attainment/KMP%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D)
+
 ------
 
 ### leetcode
