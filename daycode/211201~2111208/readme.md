@@ -3,21 +3,33 @@
 把这几天做过的题总结一下。
 
 队列和栈题目
+
 [#20 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
+
 [#1047 删除字符串中的所有相邻重复项](https://leetcode-cn.com/problems/remove-all-adjacent-duplicates-in-string/)
+
 [#150 逆波兰表达式求值](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/)
 
 字符串类型题目，对KMP，双指针等算法复习。
+
 [#28 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/)
+
 [#459 重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/)
+
 [#344 反转字符串 I](https://leetcode-cn.com/problems/reverse-string)
+
 [#541 反转字符串 II](https://leetcode-cn.com/problems/reverse-string-ii/)
+
 [#151 翻转字符串里的单词](https://leetcode-cn.com/problems/reverse-words-in-a-string/)
+
 [剑指 Offer 58 - II . 左旋转字符串](https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/)
+
 [剑指 Offer 05 . 替换空格](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/)
 
 链表
+
 [#25 K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)
+
 [#61 旋转链表](https://leetcode-cn.com/problems/rotate-list/)
 
 按照上面的顺序，依次进行自己的总结。
@@ -30,15 +42,20 @@
 
 来判断字符串是否符合题目条件。关键还是在判断符不符合出栈的要求。
 
-[#20 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)，一个不符合要求的字符串，有3种情况：
+[#20 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
+
+一个不符合要求的字符串，有3种情况：
 
 1. 第一种情况，字符串里左方向的括号多余了 ，所以不匹配。 
+
 ![](https://img-blog.csdnimg.cn/2020080915505387.png)
 
 2. 第二种情况，括号没有多余，但是 括号的类型没有匹配上。 
+
 ![](https://img-blog.csdnimg.cn/20200809155107397.png)
 
 3. 第三种情况，字符串里右方向的括号多余了，所以不匹配。
+
 ![](https://img-blog.csdnimg.cn/20200809155115779.png)
 
 ```java
@@ -64,7 +81,9 @@ public boolean isValid(String s) {
         return deque.isEmpty();
     }
 ```
-[#1047 删除字符串中的所有相邻重复项](https://leetcode-cn.com/problems/remove-all-adjacent-duplicates-in-string/),把字符串顺序放到一个栈中，然后如果相同的话 栈就弹出，这样最后栈里剩下的元素都是相邻不相同的元素了。
+[#1047 删除字符串中的所有相邻重复项](https://leetcode-cn.com/problems/remove-all-adjacent-duplicates-in-string/)
+
+把字符串顺序放到一个栈中，然后如果相同的话 栈就弹出，这样最后栈里剩下的元素都是相邻不相同的元素了。
 
 ```java
 //使用 Deque 作为堆栈
@@ -114,7 +133,9 @@ class Solution {
 }
 ```
 
-[#150 逆波兰表达式求值](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/)和上面两道题基本一样，本题中每一个子表达式要得出一个结果，然后拿这个结果再进行运算，那么这岂不就是一个相邻字符串消除的过程。
+[#150 逆波兰表达式求值](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/)
+
+和上面两道题基本一样，本题中每一个子表达式要得出一个结果，然后拿这个结果再进行运算，那么这岂不就是一个相邻字符串消除的过程。
 
 ```java
 public static int evalRPN(String[] tokens) {
@@ -156,14 +177,17 @@ public static int evalRPN(String[] tokens) {
 ### 字符串类型题目
 
 [#28 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/)
+
 在一个字符串中找另一个字符串，KMP题目，之前做过总结[KMP](https://github.com/Bin-gao/MyLeetcodeTrip/tree/master/attainment/KMP%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D)
 
 [#459 重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/)
+
 也是标准KMP题目。
 
 说一说next数组了，next 数组记录的就是最长相同前后缀，如果 next[len - 1] != -1，则说明字符串有最长相同的前后缀（就是字符串里的前缀子串和后缀子串相同的最长长度）。
 
 比如  a  b   c   a  b  c   a   b  c  a   b  c
+
     0 0 0 1 2 3 4 5 6 7 8 9
 这个字符串对应的next数组。
 
@@ -171,6 +195,7 @@ public static int evalRPN(String[] tokens) {
 
 
 [#344 反转字符串 I](https://leetcode-cn.com/problems/reverse-string)
+
 很简单，用双指针，直接上代码了。
 ```java
 class Solution {
@@ -185,6 +210,7 @@ class Solution {
 }
 ```
 [#541 反转字符串 II](https://leetcode-cn.com/problems/reverse-string-ii/)
+
 这道题目其实也是模拟，实现题目中规定的反转规则就可以了。
 
 在遍历字符串的过程中，只要让 i += (2 * k)，i 每次移动 2 * k 就可以了，然后判断是否需要有反转的区间。
@@ -219,6 +245,7 @@ class Solution {
 ```
 
 [#151 翻转字符串里的单词](https://leetcode-cn.com/problems/reverse-words-in-a-string/)
+
 这道题目可以说是综合考察了字符串的多种操作。
 
 我们将整个字符串都反转过来，那么单词的顺序指定是倒序了，只不过单词本身也倒叙了，那么再把单词反转一下，单词不就正过来了。
@@ -249,6 +276,7 @@ private StringBuilder removeSpace(String s) {
     }
 ```
 [剑指 Offer 58 - II . 左旋转字符串](https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/)
+
 上面那道题使用整体反转+局部反转就可以实现，反转单词顺序的目的。
 
 这道题目也非常类似，依然可以通过局部反转+整体反转 达到左旋转的目的。
@@ -308,6 +336,7 @@ public String replaceSpace(String s) {
 ### 链表
 
 [#25 K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)
+
 第一次自己解决hard题目，用了3个小时。简单说说吧。
 
 这道题没涉及到什么算法，就是按题目的规则模拟就行了，但是需要处理很多细节。
@@ -321,9 +350,11 @@ public String replaceSpace(String s) {
 我们把链表怎么重新接回去，分成2部分：
 
 **怎么连接前面部分**
+
 从上面可以知道，pre是指向需要翻转的链表的前面的一个节点，在完成翻转后，我们让pre指向翻转后的头节点就连接起了前面。
 
 **怎么连接后面部分**
+
 我们把翻转前链表的头节点记为start，它翻转后就变成尾节点了，再翻转后，让start指向没翻转前链表最后一个节点的下一个节点next（这个是我们要在翻转前记录下来的）。
 
 整个过程，我们用head节点进行遍历即可。
@@ -387,6 +418,7 @@ public String replaceSpace(String s) {
 ```
 
 [#61 旋转链表](https://leetcode-cn.com/problems/rotate-list/)
+
 做过上面那题，这题就变得简单过了。
 
 我们只要向右移动k%count个位置就可以了。
