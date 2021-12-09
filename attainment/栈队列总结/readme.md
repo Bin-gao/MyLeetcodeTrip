@@ -10,6 +10,8 @@
 
 [1047 . Remove All Adjacent Duplicates In String](https://leetcode-cn.com/problems/remove-all-adjacent-duplicates-in-string/)
 
+**以下按照顺序总结分析**
+
 ## 分析
 
 用栈实现队列:[232 . Implement Queue using Stacks](https://leetcode-cn.com/problems/implement-queue-using-stacks/)
@@ -157,3 +159,9 @@ class MyStack {
     }
 }
 ```
+
+[20 . Valid Parentheses](https://leetcode-cn.com/problems/valid-parentheses/)
+
+[1047 . Remove All Adjacent Duplicates In String](https://leetcode-cn.com/problems/remove-all-adjacent-duplicates-in-string/)
+
+这两道题，就看看这吧，我已经做好了。[211201~211208](https://github.com/Bin-gao/MyLeetcodeTrip/tree/master/daycode/211201%7E2111208)
