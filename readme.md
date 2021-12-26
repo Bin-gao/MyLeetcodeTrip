@@ -26,6 +26,8 @@
 
 [KMP](https://github.com/gg-dot/MyLeetcodeTrip/tree/master/attainment/KMP%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D)
 
+[滑动窗口](https://github.com/Bin-gao/MyLeetcodeTrip/tree/master/attainment/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3)
+
 ------
 
 ### leetcode
