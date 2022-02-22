@@ -32,6 +32,12 @@
 
 ### leetcode
 
+[1221 . 分割平衡字符串 ](https://github.com/Bin-gao/MyLeetcodeTrip/tree/master/1221.%20Split%20a%20String%20in%20Balanced%20Strings)
+
+22.02.22 TUE
+
+------
+
 [0002 . Add Two Numbers](https://github.com/gg-dot/MyLeetcodeTrip/tree/master/0002.%20Add%20Two%20Numbers)
 
 21.11.25 THU first solve
